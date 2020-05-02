@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<resources>
+    <declare-styleable name="ItemRating">
+          <attr name="emptyPic" format="integer"/>
+          <attr name="filledPic" format="integer|reference"/>
+          <attr name="highlightedPic" format="integer|reference"/>
+          <attr name="numberItem" format="integer"/>
+    </declare-styleable>
+</resources>
