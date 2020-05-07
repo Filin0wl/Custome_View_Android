@@ -88,18 +88,35 @@ namespace Second_attempt_custome_view
                     break;
 
             }
-            int i = 0;
-            foreach (ImageButton btn in buttons)
+            
+            if(rating == countRating)
             {
-                i++;
-                if (i <= rating)
-                    btn.SetImageDrawable(fill);
-                else
+                foreach (ImageButton btn in buttons)
+                {
                     btn.SetImageDrawable(empty);
+                }
+                countRating = 0;
+            }
+            else if(rating > countRating)
+            {
+                for (int i = countRating; i < rating; i++)
+                {
+                    buttons[i].SetImageDrawable(fill);
+                }
+                countRating = rating;
+            }
+            else
+            {
+                for (int i = rating; i < countRating; i++)
+                {
+                    buttons[i].SetImageDrawable(empty);
+                }
+                countRating = rating;
             }
            
+           
 
-            /*((ImageButton)sender).SetImageDrawable(fill);*/
+            
         }
 
 

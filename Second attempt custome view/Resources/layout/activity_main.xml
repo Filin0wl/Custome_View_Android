@@ -13,6 +13,6 @@
         app:emptyPic="@drawable/empty_star"
         app:filledPic="@drawable/filled_star"
         app:highlightedPic="@drawable/highlighted_star"
-        app:numberItem="2"
+       
         />
 </LinearLayout>
